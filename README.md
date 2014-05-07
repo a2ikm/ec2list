@@ -1,6 +1,6 @@
 # Ec2list
 
-TODO: Write a gem description
+Show running instances on AWS EC2.
 
 ## Installation
 

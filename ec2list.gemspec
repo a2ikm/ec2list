@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Ec2list::VERSION
   spec.authors       = ["Masato Ikeda"]
   spec.email         = ["masato.ikeda@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Show running instances on AWS EC2.}
+  spec.description   = %q{Show running instances on AWS EC2.}
+  spec.homepage      = "https://github.com/a2ikm/ec2list"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
