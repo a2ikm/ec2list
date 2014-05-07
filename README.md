@@ -18,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+With default profile, 
+
+```
+$ ec2list
+```
+
+With specific profile,
+
+```
+$ ec2list --profile PROFILE
+```
 
 ## Contributing
 
