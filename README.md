@@ -16,6 +16,10 @@ Or install it yourself as:
 
     $ gem install ec2list
 
+## Setup ~/.aws/config
+
+You need to setup ~/.aws/config. Instructions are [here](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
+
 ## Usage
 
 With default profile, 
