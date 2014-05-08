@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+trap("SIGINT") { exit }
+
 require "ec2list"
 
 Ec2list::Command.new(ARGV).run
