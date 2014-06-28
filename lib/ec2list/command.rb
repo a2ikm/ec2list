@@ -8,10 +8,9 @@ module Ec2list
     end
 
     def run
-      instances = fetch_instances
-      return if instances.empty?
-
-      print_instances(instances)
+      fetch_instances.each do |instance|
+        print_instance(instance)
+      end
     end
 
     private
@@ -19,19 +18,16 @@ module Ec2list
       def fetch_instances
         AWS::EC2.new.
           instances.
-          select { |instance| instance.status == :running }.
-          to_a
+          select { |instance| instance.status == :running }
       end
 
-      def print_instances(instances)
-        instances.each do |instance|
-          tags = instance.tags.to_h
-          puts [
-            tags["Name"],
-            instance.private_ip_address,
-            instance.public_ip_address,
-          ].join("\t")
-        end
+      def print_instance(instance)
+        tags = instance.tags
+        puts [
+          tags[:Name],
+          instance.private_ip_address,
+          instance.public_ip_address,
+        ].join("\t")
       end
 
       def build_options(argv)
