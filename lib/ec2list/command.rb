@@ -30,7 +30,7 @@ module Ec2list
             tags["Name"],
             instance.private_ip_address,
             instance.public_ip_address,
-          ].join(",")
+          ].join("\t")
         end
       end
 
