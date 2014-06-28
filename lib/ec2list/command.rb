@@ -42,7 +42,7 @@ module Ec2list
 
       def load_profile
         unless profile = AWSConfig[options[:profile]]
-          raise RuntimeError, "Can't locate profile '#{options[:profile]}' in ~/.aws/config"
+          abort "Can't locate profile '#{options[:profile]}' in ~/.aws/config"
         end
 
         AWS.config(profile.config_hash)
