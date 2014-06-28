@@ -8,8 +8,10 @@ module Ec2list
     end
 
     def run
-      fetch_instances.each do |instance|
-        print_instance(instance)
+      AWS.memoize do
+        fetch_instances.each do |instance|
+          print_instance(instance)
+        end
       end
     end
 
