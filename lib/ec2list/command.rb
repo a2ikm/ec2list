@@ -28,8 +28,6 @@ module Ec2list
       end
 
       def print_instances(instances)
-        puts "Name,Private IP,Public IP"
-
         instances.each do |instance|
           tags = instance.tags.to_h
           puts [
