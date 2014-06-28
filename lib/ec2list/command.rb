@@ -9,11 +9,7 @@ module Ec2list
 
     def run
       instances = fetch_instances
-      
-      if instances.empty?
-        puts "No running instances"
-        return
-      end
+      return if instances.empty?
 
       print_instances(instances)
     end
