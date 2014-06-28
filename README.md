@@ -1,4 +1,4 @@
-# Ec2list
+# ec2list
 
 Show running instances on AWS EC2.
 
@@ -36,7 +36,7 @@ $ ec2list --profile PROFILE
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/ec2list/fork )
+1. Fork it ( http://github.com/a2ikm/ec2list/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
